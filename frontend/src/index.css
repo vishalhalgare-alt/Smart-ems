@@ -1,0 +1,124 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   ROOT
+========================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========================= */
+/* DARK MODE */
+/* ========================= */
+
+body.dark-mode {
+
+  background: #050b18;
+
+  color: white;
+}
+
+/* ========================= */
+/* LIGHT MODE */
+/* ========================= */
+
+body.light-mode {
+
+  background: #f4f7fb;
+
+  color: #111827;
+}
+
+body.light-mode .dashboard-layout {
+
+  background: #f4f7fb;
+}
+
+body.light-mode .chart-box,
+body.light-mode .analytics-card,
+body.light-mode .top-navbar,
+body.light-mode .app-sidebar {
+
+  background: white;
+
+  color: #111827;
+}
+
+body.light-mode .top-navbar__icon {
+
+  background: #e5e7eb;
+
+  color: #111827;
+}
+
+body.light-mode .top-navbar__search {
+
+  background: #f3f4f6;
+}
+
+body.light-mode .performance-table th {
+
+  background: #2563eb;
+}
+
+body.light-mode .performance-table td {
+
+  color: #111827;
+}

@@ -1,0 +1,171 @@
+.leave-page {
+  padding: 2rem;
+  color: white;
+}
+
+.leave-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.leave-tag {
+  font-size: 0.8rem;
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+.leave-subtitle {
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+.add-btn {
+  background: #2563eb;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.leave-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.leave-card {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.leave-card.pending {
+  border-left: 5px solid orange;
+}
+
+.leave-card.approved {
+  border-left: 5px solid limegreen;
+}
+
+.leave-card.rejected {
+  border-left: 5px solid red;
+}
+
+.leave-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.leave-search,
+.leave-filter {
+  background: #111827;
+  border: 1px solid #374151;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.leave-search {
+  flex: 1;
+}
+
+.leave-table-wrapper {
+  background: #111827;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leave-table th,
+.leave-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #1f2937;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.status-badge.PENDING {
+  background: orange;
+  color: black;
+}
+
+.status-badge.APPROVED {
+  background: limegreen;
+  color: black;
+}
+
+.status-badge.REJECTED {
+  background: red;
+  color: white;
+}
+
+.empty-row {
+  text-align: center;
+  padding: 2rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-box input,
+.modal-box select {
+  background: #1f2937;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.cancel-btn {
+  background: gray;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+}
+
+.save-btn {
+  background: #2563eb;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+}

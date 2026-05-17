@@ -1,0 +1,286 @@
+/* ===================================== */
+/* TASK MODAL */
+/* ===================================== */
+
+.modalOverlay {
+
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0,0,0,0.65);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  z-index: 999;
+
+  padding: 20px;
+}
+
+.modalBox {
+
+  width: 100%;
+
+  max-width: 520px;
+
+  background: #081028;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 24px;
+
+  padding: 28px;
+
+  box-shadow:
+  0 20px 60px rgba(0,0,0,0.45);
+}
+
+.modalHeader {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.modalHeader h2 {
+
+  color: white;
+
+  font-size: 26px;
+}
+
+.closeBtn {
+
+  width: 42px;
+
+  height: 42px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.06);
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.closeBtn:hover {
+
+  background: rgba(255,255,255,0.12);
+}
+
+.taskForm {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.taskForm input,
+.taskForm textarea,
+.taskForm select {
+
+  width: 100%;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: #0f172a;
+
+  color: white;
+
+  padding: 14px 16px;
+
+  border-radius: 14px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.taskForm textarea {
+
+  min-height: 110px;
+
+  resize: vertical;
+}
+
+.taskForm input:focus,
+.taskForm textarea:focus,
+.taskForm select:focus {
+
+  border-color: #3b82f6;
+}
+
+.addBtn {
+
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6
+  );
+
+  color: white;
+
+  padding: 14px 18px;
+
+  border-radius: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.addBtn:hover {
+
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+  .modalBox {
+
+    padding: 22px;
+
+    border-radius: 20px;
+  }
+
+  .modalHeader h2 {
+
+    font-size: 22px;
+  }
+
+}
+
+/* =========================
+   PROFILE PAGE
+========================= */
+
+.emp-main{
+  min-height: 100vh;
+  background: #0f172a;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding:60px;
+}
+
+.profile-card{
+  width:350px;
+  background:linear-gradient(
+    145deg,
+    #111827,
+    #1e293b
+  );
+  border-radius:20px;
+  padding:35px 25px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+
+.profile-image-section{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.profile-image{
+  width:140px !important;
+  height:140px !important;
+  border-radius:50% !important;
+  object-fit:cover !important;
+  border:4px solid #3b82f6;
+  display:block;
+  margin:0 auto 20px;
+}
+.profile-name{
+  font-size:24px;
+  font-weight:700;
+  color:white;
+  margin-bottom:8px;
+}
+
+.profile-email{
+  color:#94a3b8;
+  margin-bottom:8px;
+}
+
+.profile-role{
+  color:#38bdf8;
+  font-weight:600;
+  margin-bottom:25px;
+}
+
+.change-photo-btn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.change-photo-btn:hover{
+  background:#1d4ed8;
+}
+.upload-btn{
+  background:#2563eb;
+  color:white;
+  padding:10px 18px;
+  border-radius:10px;
+  cursor:pointer;
+  display:inline-block;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.upload-btn:hover{
+  background:#1d4ed8;
+}
+
+.profile-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 0;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  font-size:16px;
+  margin-top: 10px;
+}
+
+.profile-row strong{
+  color:#2563eb;
+}
+
+.profile-row span{
+  color:#fff;
+}section {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,25 @@
+.dashboard-loader,
+.dashboard-error {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 300px;
+
+  font-size: 22px;
+
+  font-weight: 600;
+}
+
+.dashboard-loader {
+
+  color: white;
+}
+
+.dashboard-error {
+
+  color: #ff6b35;
+}

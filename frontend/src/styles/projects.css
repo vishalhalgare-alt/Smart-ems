@@ -1,0 +1,120 @@
+.projects-page {
+  padding: 20px;
+  color: white;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.projects-tag {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.projects-header h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.projects-add-btn {
+  border: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #8b5cf6
+  );
+
+  color: white;
+  font-weight: bold;
+}
+
+.projects-table-wrapper {
+
+  background: rgba(255,255,255,0.04);
+
+  border-radius: 18px;
+
+  padding: 20px;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.projects-table th {
+  text-align: left;
+
+  padding: 16px;
+
+  color: #9ca3af;
+}
+
+.projects-table td {
+  padding: 16px;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+
+.modal-box {
+  width: 400px;
+  background: #111827;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.modal-box h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.modal-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-box input,
+.modal-box select {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #1f2937;
+  color: white;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

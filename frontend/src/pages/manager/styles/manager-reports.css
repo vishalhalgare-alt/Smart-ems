@@ -1,0 +1,495 @@
+/* ========================================= */
+/* PAGE */
+/* ========================================= */
+
+.reports-page {
+
+  padding: 30px;
+
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      135deg,
+      #081028,
+      #0f172a
+    );
+
+  color: white;
+}
+
+.reports-container {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+/* ========================================= */
+/* TABS */
+/* ========================================= */
+
+.report-tabs {
+
+  display: flex;
+
+  gap: 16px;
+}
+
+.report-tabs button {
+
+  border: none;
+
+  padding: 14px 24px;
+
+  border-radius: 14px;
+
+  background: #1e293b;
+
+  color: #cbd5e1;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.report-tabs button:hover {
+
+  background: #334155;
+}
+
+.active-tab {
+
+  background:
+    linear-gradient(
+      135deg,
+      #3b82f6,
+      #8b5cf6
+    ) !important;
+
+  color: white !important;
+}
+
+/* ========================================= */
+/* STATS */
+/* ========================================= */
+
+.report-stats {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+
+.report-stat-card {
+
+  background:
+    rgba(15, 23, 42, 0.9);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius: 22px;
+
+  padding: 26px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35);
+
+  transition: 0.3s;
+}
+
+.report-stat-card:hover {
+
+  transform:
+    translateY(-4px);
+}
+
+.stat-icon {
+
+  font-size: 28px;
+
+  color: #38bdf8;
+
+  margin-bottom: 18px;
+}
+
+.report-stat-card h3 {
+
+  color: #94a3b8;
+
+  font-size: 15px;
+
+  margin-bottom: 14px;
+}
+
+.report-stat-card h1 {
+
+  font-size: 40px;
+
+  font-weight: 800;
+
+  color: white;
+}
+
+/* ========================================= */
+/* CHART */
+/* ========================================= */
+
+.chart-card {
+
+  background:
+    rgba(15, 23, 42, 0.92);
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.chart-header {
+
+  margin-bottom: 24px;
+}
+
+.chart-header h2 {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 28px;
+
+  margin-bottom: 10px;
+}
+
+.chart-header p {
+
+  color: #94a3b8;
+}
+
+/* ========================================= */
+/* REPORT CARDS */
+/* ========================================= */
+
+.report-section h2 {
+
+  margin-bottom: 20px;
+
+  font-size: 28px;
+}
+
+.report-cards {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 22px;
+}
+
+.report-card {
+
+  background:
+    rgba(15,23,42,0.92);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius: 22px;
+
+  padding: 24px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.report-card:hover {
+
+  transform:
+    translateY(-4px);
+
+  border-color:
+    rgba(59,130,246,0.5);
+}
+
+.report-card.active {
+
+  border-color: #3b82f6;
+
+  box-shadow:
+    0 0 20px rgba(59,130,246,0.3);
+}
+
+.card-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.card-header h3 {
+
+  font-size: 20px;
+}
+
+.count {
+
+  background:
+    linear-gradient(
+      135deg,
+      #3b82f6,
+      #8b5cf6
+    );
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.report-card p {
+
+  color: #94a3b8;
+
+  line-height: 1.6;
+}
+
+/* ========================================= */
+/* EXPORT */
+/* ========================================= */
+
+.export-section {
+
+  background:
+    rgba(15,23,42,0.92);
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.export-section h2 {
+
+  margin-bottom: 22px;
+}
+
+.export-controls {
+
+  display: flex;
+
+  gap: 20px;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.format-group {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.format-group label {
+
+  color: #cbd5e1;
+}
+
+.format-group select {
+
+  background: #0f172a;
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  color: white;
+
+  padding: 12px 14px;
+
+  border-radius: 12px;
+}
+
+.export-btn {
+
+  border: none;
+
+  padding: 14px 24px;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #8b5cf6
+    );
+
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  transition: 0.3s;
+}
+
+.export-btn:hover {
+
+  transform:
+    translateY(-3px);
+}
+
+/* ========================================= */
+/* TABLE */
+/* ========================================= */
+
+.preview-section {
+
+  background:
+    rgba(15,23,42,0.92);
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.preview-section h2 {
+
+  margin-bottom: 24px;
+}
+
+.preview-content {
+
+  overflow-x: auto;
+}
+
+.preview-table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.preview-table thead {
+
+  background:
+    linear-gradient(
+      135deg,
+      #3b82f6,
+      #8b5cf6
+    );
+}
+
+.preview-table th {
+
+  padding: 16px;
+
+  text-align: left;
+
+  font-size: 14px;
+}
+
+.preview-table td {
+
+  padding: 16px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.06);
+
+  color: #e2e8f0;
+}
+
+/* ========================================= */
+/* EMPLOYEE REPORT */
+/* ========================================= */
+
+.employee-select-box {
+
+  margin-bottom: 26px;
+}
+
+.employee-select-box select {
+
+  width: 320px;
+
+  background: #0f172a;
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  color: white;
+
+  padding: 14px 16px;
+
+  border-radius: 14px;
+
+  font-size: 15px;
+}
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+  .reports-page {
+
+    padding: 20px;
+  }
+
+  .report-tabs {
+
+    flex-direction: column;
+  }
+
+  .export-controls {
+
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .employee-select-box select {
+
+    width: 100%;
+  }
+
+}

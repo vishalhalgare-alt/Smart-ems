@@ -1,0 +1,154 @@
+.analytics-page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.analytics-header {
+  padding: 42px;
+  border-radius: 24px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(27, 45, 92, 0.95),
+      rgba(36, 42, 85, 0.92)
+    );
+  border:
+    1px solid rgba(59, 130, 246, 0.2);
+}
+
+.analytics-tag {
+  color: #8ea2ff;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.analytics-header h1 {
+  color: white;
+  font-size: 68px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.analytics-subtitle {
+  color: #b8c4e0;
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 850px;
+}
+
+.analytics-cards-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.analytics-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 28px;
+  border-radius: 22px;
+  background: rgba(9, 18, 40, 0.96);
+  border:
+    1px solid rgba(255, 255, 255, 0.06);
+}
+
+.analytics-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.analytics-icon.blue {
+  background:
+    linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.analytics-icon.green {
+  background:
+    linear-gradient(135deg, #10b981, #059669);
+}
+
+.analytics-icon.orange {
+  background:
+    linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.analytics-icon.purple {
+  background:
+    linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.analytics-card h3 {
+  color: #b8c4e0;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.analytics-card h2 {
+  color: white;
+  font-size: 34px;
+  margin-bottom: 6px;
+}
+
+.analytics-card p {
+  color: #7f8aa3;
+  font-size: 14px;
+}
+
+.analytics-chart-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(420px, 1fr));
+  gap: 24px;
+}
+
+.chart-box {
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(9, 18, 40, 0.96);
+  border:
+    1px solid rgba(255, 255, 255, 0.06);
+}
+
+.chart-header {
+  margin-bottom: 20px;
+}
+
+.chart-header h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.performance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.performance-table th,
+.performance-table td {
+  padding: 16px;
+  text-align: left;
+}
+
+.performance-table th {
+  color: #8ea2ff;
+  font-size: 14px;
+  border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.performance-table td {
+  color: white;
+  border-bottom:
+    1px solid rgba(255,255,255,0.05);
+}
